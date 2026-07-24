@@ -135,6 +135,7 @@ def compare_models(prompt: str) -> dict:
                * PRICING_PER_1K_TOKENS["gpt-4o"]["output"]
         (0.75 từ ≈ 1 token — ước lượng thô; Part 2 sẽ tính chính xác hơn)
     """
+    # TODO: gọi call_openai và call_openai_mini, ghép dict kết quả
 #    raise NotImplementedError("Implement compare_models")
     gpt4o_text, gpt4o_latency = call_openai(prompt)
     mini_text, mini_latency = call_openai_mini(prompt)
